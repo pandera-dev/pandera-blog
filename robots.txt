@@ -1,1 +1,1 @@
-Sitemap: https://pandera-dev.github.io/pandera-blog/sitemap.xml
+Sitemap: http://blog.pandera.ci/sitemap.xml

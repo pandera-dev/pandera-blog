@@ -6,7 +6,7 @@
 
 https://pandera-dev.github.io/pandera-blog/
 
-# My Blog
+# Pandera Blog
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_

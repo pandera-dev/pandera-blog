@@ -9,3 +9,15 @@
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
+
+.footer-col h2 {
+    margin-top: 0.5rem !important;
+}
+
+.site-title::before {
+	content: url("/images/small_logo.png");
+	display: inline-block;
+	position: relative;
+	width: 45px;
+	top: 10px;
+}

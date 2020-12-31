@@ -1,11 +1,14 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+This website is the blog for pandera, a statistical typing tool for scientists,
+engineers, and analysts to make more robust data data pipelines.
 
+[Github Repo](https://github.com/pandera-dev/pandera)
 
+<br>
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[Documentation](https://pandera.readthedocs.io/en/stable/)

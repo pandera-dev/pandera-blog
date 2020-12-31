@@ -1,1 +1,1 @@
-Sitemap: http://blog.pandera.ci/sitemap.xml
+Sitemap: https://blog.pandera.ci/sitemap.xml

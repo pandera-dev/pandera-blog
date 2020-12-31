@@ -478,4 +478,8 @@ pre code { font-size: 15px !important; }
 
 p code { font-size: 19px; }
 
+.footer-col h2 { margin-top: 0.5rem !important; }
+
+.site-title::before { content: url("/images/small_logo.png"); display: inline-block; position: relative; width: 45px; top: 10px; }
+
 /*# sourceMappingURL=style.css.map */

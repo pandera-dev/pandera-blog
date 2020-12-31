@@ -205,7 +205,7 @@ analysis code</strong>.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Schemas-as-Generative-Data-Contracts">Schemas as Generative Data Contracts<a class="anchor-link" href="#Schemas-as-Generative-Data-Contracts"> </a></h3>
+<h3 id="Schemas-as-Generative-Data-Contracts-&#128220;">Schemas as Generative Data Contracts &#128220;<a class="anchor-link" href="#Schemas-as-Generative-Data-Contracts-&#128220;"> </a></h3>
 </div>
 </div>
 </div>
@@ -730,23 +730,23 @@ strategies by interactively generating data using the <code>example</code> metho
   <tbody>
     <tr>
       <th>0</th>
-      <td>2742</td>
-      <td>5</td>
-      <td>258978.320353</td>
+      <td>2042</td>
+      <td>7</td>
+      <td>746370.512051</td>
       <td>townhouse</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2497</td>
-      <td>2</td>
-      <td>203806.217345</td>
-      <td>condo</td>
+      <td>9</td>
+      <td>5</td>
+      <td>40167.336181</td>
+      <td>townhouse</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2096</td>
-      <td>6</td>
-      <td>947451.816184</td>
+      <td>467</td>
+      <td>9</td>
+      <td>3707.778242</td>
       <td>townhouse</td>
     </tr>
   </tbody>
@@ -812,29 +812,29 @@ strategies by interactively generating data using the <code>example</code> metho
   <tbody>
     <tr>
       <th>0</th>
-      <td>531</td>
-      <td>2</td>
-      <td>280573.311090</td>
+      <td>1625</td>
+      <td>8</td>
+      <td>417650.777844</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>749</td>
-      <td>8</td>
-      <td>154479.182989</td>
+      <td>317</td>
       <td>0</td>
-      <td>0</td>
+      <td>788150.855590</td>
+      <td>1</td>
+      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1063</td>
-      <td>5</td>
-      <td>798193.029357</td>
+      <td>1937</td>
+      <td>7</td>
+      <td>710676.511681</td>
       <td>1</td>
-      <td>1</td>
+      <td>0</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -857,7 +857,7 @@ converting it into a search strategy using the
 <a href="https://hypothesis.readthedocs.io/en/latest/numpy.html#pandas">pandas-supported hypothesis strategies</a>.
 Currently, one limitation that you can see from the <code>ProcessedData</code> example above is that the
 generated data doesn't quite capture the joint distribution between the <code>property_type_*</code> dummy
-variables, as the third row contains <code>1</code>s for all of the property types. Depending on
+variables, as the second row contains <code>1</code>s for all of the property types. Depending on
 what exactly it is you're trying to test, this may or may not matter. Ultimately, it's
 still up to you to determine what to test and how.</p>
 

@@ -167,7 +167,7 @@ which is one of the de facto tools for data manipulation in the DS/ML toolchain.
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Tooling for type safety is improving in the Python with the broad adoption
+<p>Tooling for type safety is improving in the Python ecosystem with the broad adoption
 of the <a href="https://docs.python.org/3/library/typing.html">typing</a> module and
 projects like <a href="http://mypy-lang.org/">mypy</a>, which eases the developer
 experience for writing readable, reliable code.</p>
@@ -197,7 +197,7 @@ production systems, and we need better tooling for this.</p>
 <a href="https://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests">discussions</a>
 available online about different types of testing techniques and how to put them
 into practice. I won't dive deeply into it here, but in short, testing your code
-makes it easier to change it and know when you've broken something and doubly serves as
+makes it easier to change it and know when you've broken something while at the same time serving as
 documentation.</p>
 <p>Even in exploratory or research contexts, it's a good idea to write tests for your
 code because it strengthens your confidence in the robustness of the insights that
@@ -217,7 +217,7 @@ you're taking away from your analysis.</p>
 <p>The challenge with testing software compounds when processing data for the
 purpose of statistical analysis and modeling.</p>
 <p>Consider a machine learning pipeline that creates a predictive model from
-survey responses. The barriers to the testing data and transformation code
+survey responses. The barriers to testing data and transformation code
 tends to be much higher than the business logic that processes survey responses
 and stores raw values in a database because the latter tends to be simpler
 and more atomic by design.</p>
@@ -248,8 +248,8 @@ code. As the famous software development quip goes:</p>
 </ul>
 </blockquote>
 <p>But you might think: "but when I put my code in production, surely I
-– or my ML engineer collaborator – will write tests then?". The thing is,
-regardless of who writes those tests or when their written, someone'll have to
+– or one of my collaborators – will write tests then?". The thing is,
+regardless of who writes those tests or when they're written, someone'll have to
 do it at some point, so the sooner and more quickly you can climb
 the technical debt mountain 🏔 the better!</p>
 <p>In the rest of this post I'll try to convince you that statistical typing gives
@@ -308,18 +308,18 @@ causes our pipeline to fail if any one of the values occurs significantly more
 frequently than the others, given a pre-defined level of statistical significance.</p>
 <p>Or we may want a <em>real-valued</em> variable to be drawn roughly from a normal
 distribution with mean <code>µ</code> and variance <code>σ</code>, which can also be specified with an
-alpha value that the we deem acceptable for a particular analysis.</p>
+alpha value that we deem acceptable for a particular analysis.</p>
 <p>In essence, a statistical typing implementation involves specifying three kinds
 of metadata for a given set of variables:</p>
 <ol>
 <li>logical data types, e.g. <code>int</code>, <code>str</code>, <code>float</code>, etc.</li>
 <li>deterministic properties, e.g. <code>categorical</code> values and <code>real-valued</code> ranges</li>
-<li>probabilistic properties, e.g. sufficient statistics like <code>mean</code>, <code>standard deviation</code></li>
+<li>probabilistic properties, e.g. sufficient statistics like <code>mean</code> and <code>standard deviation</code></li>
 </ol>
 <p>The challenge presented by item <em>3</em> is obvious: discovering the underlying
 probability distributions of real-world data is often non-trivial. However,
 even if we can only express or automatically infer these metadata up to point
-<em>2</em>, we can get still something quite powerful 💪: <strong>property-based testing of statistical
+<em>2</em>, we can still get something quite powerful 💪: <strong>property-based testing of statistical
 analysis code</strong>.</p>
 
 </div>
@@ -333,7 +333,7 @@ analysis code</strong>.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>With a statistically-typed schema, not only can we validate real-world data to
+<p>With a statistically-typed dataframe, not only can we validate real-world data to
 ensure that our assumptions about them hold up, but we can also test our data
 transformation, analysis, and modeling code <em>given valid samples</em> according to
 our schema definition. Statistical typing effectively gives DS/ML practitioners
@@ -981,7 +981,7 @@ Currently, one limitation that you can see from the <code>ProcessedData</code> e
 generated data doesn't quite capture the joint distribution between the <code>property_type_*</code> dummy
 variables, as the second row contains <code>1</code>s for all of the property types. Depending on
 what exactly it is you're trying to test, this may or may not matter. Ultimately, it's
-still up to you to determine what to test and how.</p>
+still up to you to determine what to test and how 🤔.</p>
 
 </div>
 </div>
@@ -1004,7 +1004,7 @@ properties of data as it flows through your pipeline.</li>
 <li><a href="https://github.com/pandera-dev/pandera/issues/168">Add a more comprehensive suite of built-in statistical hypothesis tests</a></li>
 <li><a href="https://github.com/pandera-dev/pandera/issues/370">Implement data synthesis strategies for hypothesis tests</a></li>
 <li><a href="https://github.com/pandera-dev/pandera/issues/371">Support data synthesis strategies for joint distributions</a></li>
-<li><a href="https://github.com/pandera-dev/pandera/issues/179">Support machine learning workflows with machine learning schemas</a></li>
+<li><a href="https://github.com/pandera-dev/pandera/issues/179">Support machine-learning-specific schemas</a></li>
 </ul>
 <p>If you're interested in this project, please consider helping out with
 <a href="https://github.com/pandera-dev/pandera/blob/master/.github/CONTRIBUTING.md">code contributions</a>,

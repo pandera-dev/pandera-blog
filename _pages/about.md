@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This website is the blog for pandera, a statistical typing tool for scientists,
-engineers, and analysts to make more robust data data pipelines.
+This website is the blog for `pandera`, a statistical typing tool for scientists,
+engineers, and analysts to make more robust data pipelines.
 
-[Github Repo](https://github.com/pandera-dev/pandera)
+- [Github Repo](https://github.com/pandera-dev/pandera)
+- [Documentation](https://pandera.readthedocs.io/en/stable/)
 
-<br>
+`pandera` is written and maintained by Niels Bantilan
 
-[Documentation](https://pandera.readthedocs.io/en/stable/)
+Contact Info: <a href="mailto:niels@pandera.ci">niels@pandera.ci</a>

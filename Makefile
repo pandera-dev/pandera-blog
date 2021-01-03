@@ -53,7 +53,7 @@ restart-jekyll: .FORCE
 	chmod -R u+rw .
 
 conda-env:
-    @conda env create -n pandera-blog -f environment.yml \
+	@conda env create -n pandera-blog -f environment.yml \
 		python -m ipykernel install \
 		--name 'pandera-blog' \
 		--display-name 'pandera-blog'

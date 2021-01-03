@@ -31,7 +31,7 @@
   
       ,"page1": {
           "title": "About",
-          "content": "This website is the blog for pandera, a statistical typing tool for scientists, engineers, and analysts to make more robust data data pipelines. . Github Repo . . Documentation .",
+          "content": "This website is the blog for pandera, a statistical typing tool for scientists, engineers, and analysts to make more robust data pipelines. . Github Repo | Documentation | . pandera is written and maintained by Niels Bantilan . Contact Info: niels@pandera.ci .",
           "url": "https://blog.pandera.ci/about/",
           "relUrl": "/about/",
           "date": ""
